@@ -1,864 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanuja K - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanuja K | Smartsheet Architect & Data Analytics Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .gradient-text { background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
 </head>
+<body class="bg-slate-50 text-slate-900">
 
-<body>
+    <!-- Floating LinkedIn Button -->
+    <a href="https://www.linkedin.com/in/thanuja-kedila/" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#0077b5] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center gap-2">
+        <i class="fab fa-linkedin text-xl"></i>
+        <span class="hidden md:inline font-semibold">Connect on LinkedIn</span>
+    </a>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/tanu.png" alt="Thanuja K" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Thanuja K">Thanuja K</h1>
-
-          <p class="title">Smartsheet developer @Egis</p>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-blue-600">THANUJA K.</span>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="mailto:thanujakedila@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Hire Me</a>
+            </div>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:thanujakedila@gmail.com" class="contact-link">thanujakedila@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+91 9741366689</a>
-            </div>
-
-          </li>
-
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Kadaba, Mangalore, Karnataka</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/Thanujak16" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/thanuja-kedila/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Achievements</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Strong expertise in Smartsheet, including Control Center automation, report/dashboard creation, and workflow 
-            optimization. Ready to contribute to data-driven solutions and help organizations turn raw data into actionable 
-            strategies.Passionate MBA graduate with 2 year of analytics experience, specializing in Smartsheet, Excel, and Python.
-          </p>
-
-          <p>
-            Skilled in market research and data visualization, with hands-on experience using 
-            Tableau,Power BI and Looker Studio.Ready to contribute to data-driven solutions and help organizations turn raw data into actionable strategies.
-            Proficient in MS Office, Google Sheets, SQL, and Python libraries like Pandas and Matplotlib.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Smartsheet Analytics</h4>
-
-                <p class="service-item-text">
-                  Using Smartsheet I can create tailored project tracking dashboards that provide valuable insights by visualizing KPIs, optimizing processes, 
-                  and enabling data-driven decision-making with real-time updates . I design custom automated workflows to streamline project management, integrate
-                  seamlessly with existing systems, and automate recurring tasks, saving time and reducing errors. I create meaningful metrics for dashboards, including milestone tracking,
-                  resource utilization, and risk analysis, to ensure projects stay on schedule and address potential challenges effectively.
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-blue-500/30">
+                    Smartsheet Core Product Certified
+                </span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                    Building <span class="gradient-text">Scalable Systems</span> for Modern Operations.
+                </h1>
+                <p class="mt-6 text-lg text-slate-300 leading-relaxed max-w-xl">
+                    Project Controls System Specialist bridging the gap between raw data and executive strategy. Expert in Smartsheet Architectures, Power BI, and Python automation.
                 </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analytics</h4>
-
-                <p class="service-item-text">
-                  Expertise in using SQL to extract, transform, and analyze large datasets efficiently, ensuring accurate insights for decision-making.
-                  Utilize Python libraries like Pandas, NumPy, and Matplotlib to perform in-depth data analysis, predictive modeling, and visualization.
-                  Design interactive dashboards with tools like Power BI, Tableau, or Smartsheet to present insights clearly, track KPIs, and monitor business performance in real-time.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Power BI Services</h4>
-
-                <p class="service-item-text">
-                  Build dynamic and visually appealing dashboards in Power BI to help track KPIs, monitor performance, and uncover actionable insights.
-                  Combine data from multiple sources, create efficient data models, and ensure seamless integration for a unified view of business metrics.
-                  Develop tailored Power BI reports that align with business goals, providing easy-to-understand insights for better decision-making.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Skills</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="" alt="" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Languages</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>Python, SQL</p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition flex items-center gap-2">
+                        View My Work <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="cv/Thanuja_Resume_Data_Analyst.pdf" target="_blank" class="border border-slate-500 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold transition">
+                        Download CV
+                    </a>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="" alt="" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Databases</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>Smartsheet, Google Sheets, Microsoft Excel, MYSQL</p>
-                  
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="" alt="" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Visualization Tools</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>Tableau, PowerBI, Google Data Studio</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="" alt="" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Libraries</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>Pandas, Numpy, Matplotlib, MySQL Connector</p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
+            <div class="flex justify-center relative">
+                <div class="absolute inset-0 bg-blue-500 rounded-full blur-[100px] opacity-20"></div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <!-- YOUR PHOTO GOES HERE -->
+                    <img src="img/tanu.png" alt="Thanuja K" class="relative w-80 h-96 md:w-96 md:h-[480px] object-cover rounded-2xl shadow-2xl border border-white/10" onerror="this.src='https://via.placeholder.com/400x500?text=Thanuja+K'">
+                </div>
             </div>
-
-          </section>
-
         </div>
+    </section>
 
+    <!-- About & Recognition Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 items-start">
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold mb-6 italic text-slate-800 border-l-4 border-blue-600 pl-4">The Professional Story</h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        I hold an <strong>MBA in Food Business (Analytics and Marketing)</strong>, which gives me a unique perspective on operational efficiency. My career is dedicated to solving the "process gap" problem. Whether it's automating team assignments at DesignCafe or building unified application interfaces at Egis, I focus on creating systems that are both powerful and user-friendly.
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        By integrating tools like <strong>Jira, Smartsheet, and Power BI</strong>, I've helped organizations reduce manual effort by up to 60%, ensuring that stakeholders have real-time visibility into every moving part of their project.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-4 uppercase text-xs tracking-widest">Major Milestones</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-emerald-100 p-2 rounded-lg text-emerald-600"><i class="fas fa-trophy"></i></div>
+                            <div>
+                                <p class="font-bold text-sm">Star Performer (JAS-24 & JFM-25)</p>
+                                <p class="text-xs text-slate-500">Awarded for CT/CS Auto-allocation architecture @ DesignCafe.</p>
+                            </div>
+                            <div class="bg-emerald-100 p-2 rounded-lg text-emerald-600"><i class="fas fa-trophy"></i></div>
+                            <div>
+                                <p class="font-bold text-sm">I am an Entreprenuer and this is my Entreprenuership</p>
+                                <p class="text-xs text-slate-500">For creating quality metric sheets and dashboards for stakeholders.</p>
+                                <p class="text-xs text-slate-500">Created seamless architectures for Experience Center Scorecards, which were instrumental in performing audits. @ DesignCafe.</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <p class="font-bold text-sm"><a href="https://www.credly.com/badges/d60a11c4-3eb1-4490-adb3-da3297ee0945/public_url">Smartsheet Core Certified</a></p>
+                                <p class="text-xs text-slate-500">Expertise in Control Center, DataMesh, and WorkApps.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <p class="font-bold text-sm"><a href="https://drive.google.com/file/d/1r8r47penos7iZcoZhD7JmcVjMp3TXwMp/view?usp=drive_link">Microsoft Power BI</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <p class="font-bold text-sm"><a href="https://www.analystbuilder.com/u/Thanujak99?skill=mysql&r=YCUwMMtVV6v58oQKKk1lrA2zk">SQL Basic to Intermediate (Analyst Builder)</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <p class="font-bold text-sm"><a href="https://www.coursera.org/account/accomplishments/verify/7BWAKJ5B56V8?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Excel Skills for Business Essentials</a></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--
-          - clients
-        -->
+    <!-- Detailed Experience Section -->
+    <section id="experience" class="py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Work Experience</h2>
+            <div class="space-y-16">
+                <!-- Egis -->
+                <div class="relative pl-8 border-l-2 border-blue-600">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-blue-600 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Project Controls System Specialist</h3>
+                            <p class="text-blue-600 font-semibold">Egis Engineering India</p>
+                        </div>
+                        <p class="text-slate-500 font-bold">Sept 2025 – Present</p>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 list-disc list-outside ml-4">
+                        <li>Design and manage end-to-end workflow solutions using <strong>Smartsheet Control Center</strong>.</li>
+                        <li>Build scalable architectures using <strong>DataMesh, Data Shuttle, and Dynamic View</strong>.</li>
+                        <li>Support leadership with deep insights using <strong>Smartsheet Reports and Power BI</strong>.</li>
+                        <li>Streamline user access via <strong>WorkApps</strong>, ensuring high data accuracy and operational efficiency.</li>
+                    </ul>
+                </div>
 
-        
+                <!-- DesignCafe -->
+                <div class="relative pl-8 border-l-2 border-slate-300">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-slate-300 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800">Data Analyst - Operations</h3>
+                            <p class="text-blue-600 font-semibold">DesignCafe</p>
+                        </div>
+                        <p class="text-slate-500 font-bold">Nov 2023 – Aug 2025</p>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 list-disc list-outside ml-4">
+                        <li>Designed <strong>Voice of Customer (VOC)</strong> architecture for seamless client feedback analysis.</li>
+                        <li>Automated team assignments based on workload, significantly optimizing resource allocation.</li>
+                        <li>Created a site handover tracking system, reducing post-handover complaints by ensuring vendor updates.</li>
+                        <li>Streamlined the refund process using automated row movement, reducing manual processing time.</li>
+                    </ul>
+                </div>
+                <!--Sids Farms-->
+                <div class="relative pl-8 border-l-2 border-slate-300">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-slate-300 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800">Business Development Promoter</h3>
+                            <p class="text-blue-600 font-semibold">Sids Farm Private Limited</p>
+                        </div>
+                        <p class="text-slate-500 font-bold">June 2023 – September 2023</p>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 list-disc list-outside ml-4">
+                        <li>Conducted comprehensive market research by engaging with diverse communities, organizing events</li>
+                        <li>Actively promoting Sid’s farm products, resulting in increased brand visibility and customer engagement</li>
+                        <li>Utilized advanced Excel skills to analyze extensive datasets, extracting valuable insights that informed strategic decision-making processes and optimized marketing strategies for Sids farm products.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      </article>
+    <!-- Projects Grid -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">Service Offerings</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Smartsheet Analytics</h3>
+                    <p class="text-slate-600 mb-6">Using Smartsheet I can create tailored project tracking dashboards that provide valuable 
+                        insights by visualizing KPIs, optimizing processes, and enabling data-driven decision-making with real-time updates . 
+                        I design custom automated workflows to streamline project management, integrate seamlessly with existing systems, and
+                        automate recurring tasks, saving time and reducing errors. I create meaningful metrics for dashboards, including 
+                        milestone tracking, resource utilization, and risk analysis, to ensure projects stay on schedule and address potential 
+                        challenges effectively.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Smartsheet</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Control Center</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Workapps</span>
+                    </div>
+                </div>
 
+                <!-- Project 2 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-200">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Data Analytics</h3>
+                    <p class="text-slate-600 mb-6">Expertise in using SQL to extract, transform, and analyze large datasets efficiently, 
+                        ensuring accurate insights for decision-making. Utilize Python libraries like Pandas, NumPy, and Matplotlib to 
+                        perform in-depth data analysis, predictive modeling, and visualization. Design interactive dashboards with tools 
+                        like Power BI, Tableau, or Smartsheet to present insights clearly, track KPIs, and monitor business performance 
+                        in real-time.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Jira</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Power BI & DAX</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">SQL & Pandas</span>
+                    </div>
+                </div>
 
+                <!-- Project 3 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-orange-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-200">
+                        <i class="fas fa-coffee text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Power BI Services</h3>
+                    <p class="text-slate-600 mb-6">Build dynamic and visually appealing dashboards in Power BI to help track KPIs, monitor performance, 
+                        and uncover actionable insights. Combine data from multiple sources, create efficient data models, and ensure seamless integration 
+                        for a unified view of business metrics. Develop tailored Power BI reports that align with business goals, providing easy-to-understand 
+                        insights for better decision-making.</p>
 
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+    <section id="contributions" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-slate-900">Strategic Collaborations</h2>
+                <p class="text-slate-500 text-lg">Highlighting my contributions to UI/UX design and product strategy for specialized web platforms.</p>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Rasya Traditions -->
+                <div class="group bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 hover-card">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center p-2 overflow-hidden">
+                            <!-- Saree Website Logo -->
+                            <img src="rasya-logo.png" alt="Rasya Logo" class="w-full object-contain" onerror="this.src='https://ui-avatars.com/api/?name=Rasya&background=fdf2f8&color=be185d'">
+                        </div>
+                        <span class="bg-pink-100 text-pink-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">UI/UX Consulting</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Rasya Traditions | Saree E-commerce</h3>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Assisted in the creative conceptualization and user interface design of this specialized e-commerce platform. I provided the layout recommendations, visual aesthetic guidelines, and user-flow strategy to ensure a premium shopping experience.
+                    </p>
+                    <a href="https://nitish36.github.io/Rasya-Traditions/" target="_blank" class="inline-flex items-center gap-2 font-bold text-blue-600 group-hover:gap-4 transition-all">
+                        Visit Live Site <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Karnataka Veterinary, Animal and Fisheries Sciences University</h4>
-              <h3 class="h4 timeline-item-title">MBA in Food Business (Analytics and Marketing)</h3>
-              <span>Bangalore,Karnataka</span>
-              <span>Jan. 2022 – Nov 2023</span>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+                <!-- Inspection Dashboard -->
+                <div class="group bg-slate-900 rounded-[2.5rem] p-10 border border-slate-800 hover-card text-white">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-16 h-16 bg-blue-600/20 text-blue-400 rounded-2xl flex items-center justify-center text-2xl">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <span class="bg-blue-500/20 text-blue-300 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Dashboard Architecture</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Industrial Inspection Dashboard</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Collaborated on the front-end design of this complex data monitoring tool. While the backend was technically integrated, I focused on the UI components and data hierarchy to ensure inspection metrics were intuitive for field operators.
+                    </p>
+                    <a href="https://datastudio.google.com/reporting/c0321cf5-b668-4672-b3b9-daf991a36045" target="_blank" class="inline-flex items-center gap-2 font-bold text-blue-400 group-hover:gap-4 transition-all">
+                        Explore Dashboard <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
             </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Project Controls System Specialist - Egis</h4>
-
-              <span>Sept-2025 - Present</span>
-
-              
-                <ol class="timeline-list">
-                  <li class="timeline-item" style="color: bisque;"> Currently working as a Project Controls Systems Specialist at Egis Engineering India, where I design and manage 
-                    end-to-end workflow solutions using Smartsheet. </li>
-                  <li class="timeline-item" style="color: bisque;">My role involves creating advanced automated workflows, building scalable 
-                    architectures through Smartsheet Control Center, and integrating data efficiently using DataMesh, Data Shuttle, and 
-                    Dynamic View.</li>
-                  <li class="timeline-item" style="color: bisque;">I develop interactive reports and dashboards, optimize project tracking systems, and support leadership 
-                    with insights using Smartsheet Reports and Power BI. </li>
-                  <li class="timeline-item" style="color: bisque;">I also work with WorkApps to streamline user access and create 
-                    unified project environments, ensuring high data accuracy, operational efficiency, and seamless collaboration across 
-                    teams. </li>
-                </ol>
-              
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Operations Analytics - DesignCafe</h4>
-
-              <span>Nov 2023 - Aug 2025</span>
-
-              
-                <ol class="timeline-list">
-                  <li class="timeline-item" style="color: bisque;"> Developed project tracking metrics and dashboards in Smartsheet for real-time insights 
-                  and performance analysis.</li>
-                  <li class="timeline-item" style="color: bisque;">Built Experience Center (EC) architecture to enhance customer project management, 
-                    leveraging Control Center for project sheet automation and user-friendly workflows. ,</li>
-                  <li class="timeline-item" style="color: bisque;"> Designed Voice of Customer (VOC) architecture with Data Shuttle, Data Mesh, Automation, and Dynamic
-                    Views, enabling seamless opportunity tracking, client feedback analysis, and management reporting.</li>
-                  <li class="timeline-item" style="color: bisque;">Automated team member assignments based on project workload using Data Shuttle and Mesh, optimizing resource allocation.</li>
-                  <li class="timeline-item" style="color: bisque;"Streamlined the refund process by integrating auto-fill forms and automated row movement, reducing manual effort and processing time.</li>
-                  <li class="timeline-item" style="color: bisque;">Identified and addressed process gaps like vendor referrals, implementing Dynamic Views to collect data from Project Managers efficiently.
-                    Created a client site handover tracking system using Smartsheet forms, reducing post-handover complaints by ensuring vendor updates.</li>
-                </ol>
-              
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Business Development Promoter -  Sids Farm Private Limited</h4>
-
-              <span>June 2023 – September 2023</span>
-
-              <ol class="timeline-list">
-                <li class="timeline-item" style="color: bisque;"> Conducted comprehensive market research by engaging with diverse communities, organizing events</li>
-                <li class="timeline-item" style="color: bisque;"> Actively promoting Sid’s farm products, resulting in increased brand visibility and customer engagement</li>
-                <li class="timeline-item" style="color: bisque;">  Utilized advanced Excel skills to analyze extensive datasets, extracting valuable insights that informed strategic decision-making processes and optimized marketing strategies for Sids farm products.</li>
-              </ol>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn></button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn></button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn></button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn></button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item></button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item></button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item></button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item></button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://lookerstudio.google.com/u/0/reporting/5d08548c-fe71-4f36-91b7-936d3376b029/page/Q6I3D">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/airbnb.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Airbnb</h3>
-                <p class="project-category">Tech Stack: Python, Jupyter Notebook, Looker Studio</p>
-                <p class="project-category"><a href="https://github.com/Thanujak16/Airbnb" style="color: antiquewhite;">Github Link</a></p>
-                
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Thanujak16/Amazon-Sales-Dashboard">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/amazon.jpeg" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Amazon Sales Dashboard</h3>
-                <p class="project-category">Tech Stack: Google Sheets, PowerBI, DAX</p>
-                <p class="project-category">Analytics</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://lookerstudio.google.com/u/0/reporting/85fba4aa-b3f6-4b94-8ee1-a3d40523227b">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/coffee.webp" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Coffee-Market-Insights-Automation</h3>
-
-                <p class="project-category"><a href="https://github.com/Thanujak16/Coffee-Project" style="color: antiquewhite;">Github Link</a></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://lookerstudio.google.com/u/0/reporting/20f85207-7b8f-4c1f-a380-e9433d4bf9bf">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/jira.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Incident Project Management Using Jira And Smartsheet</h3>
-
-                <p class="project-category"><a href="https://github.com/Thanujak16/Incident-Management-Tracker-jira" style="color: antiquewhite;">Github Link</a></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.linkedin.com/posts/thanuja-kedila_powerbi-dataanalytics-businessintelligence-activity-7424360492778983425--z7V?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADGAMAMBlky-Rwmduj02n8_9HAOKMZz6zoM">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Weather.PNG" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Weather Analytics Dashboard | Power BI Project</h3>
-
-                <p class="project-category"><a href="https://www.linkedin.com/posts/thanuja-kedila_powerbi-dataanalytics-businessintelligence-activity-7424360492778983425--z7V?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADGAMAMBlky-Rwmduj02n8_9HAOKMZz6zoM" style="color: antiquewhite;">Project Link</a></p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://www.linkedin.com/pulse/streamlining-center-store-audit-process-smartsheet-automation-k-poazc/?trackingId=sOTLTDO9RnK9msv3BiSMPg%3D%3D">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/EC.jpg" alt="CT Allocation" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <h3 class="h3 blog-item-title">Streamlining the Center Store Audit
-                    Process with Smartsheet Automation
-                    and Control Center</h3>
-
-                  <p class="blog-text">
-                    In today’s fast-paced retail environment, efficiency and accuracy are paramount for ensuring
-                    consistent performance across multiple locations. Managing and auditing performance at scale
-                    can be challenging without the right tools. At our organization, we took on the challenge of
-                    automating the Center Store process using Smartsheet automation and Control Center to ensure 
-                    monthly audits, performance tracking, and seamless maintenance issue reporting.
-                  </p>
-
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">Featured Analytics Projects</h2>
+                <p class="text-slate-500 mt-4">Turning raw data into visual business intelligence.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Weather Analytics Dashboard</h3>
+                    <p class="text-slate-600 mb-6">Integrated external Weather APIs using Python and Power Query to visualize AQI (PM2.5, CO, NO) and 3-day forecast trends for environmental analysis.</p>
+                    <p class="text-slate-600 mb-6"><a href="https://app.powerbi.com/groups/me/reports/03a98a68-9e8c-4c8f-ab01-183441bc7438/861f867bd42ae7906d1f?experience=power-bi">Dashboard Link</a></p>
+                    <p class="text-slate-600 mb-6"><a href="https://github.com/Thanujak16/Weather-Analytics">Github Link</a></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Power BI</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Python</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">API Integration</span>
+                    </div>
                 </div>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.linkedin.com/pulse/streamlining-team-assignments-smartsheet-automation-workload-k-peafc/?trackingId=Fn%2B2TvBBT4eynUOMDu7smw%3D%3D">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/assignment.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <h3 class="h3 blog-item-title">Streamlining Team Assignments with
-                    Smartsheet Automation and Workload
-                    Balancing</h3>
-
-                  <p class="blog-text">
-                    In any dynamic project management environment, effectively distributing tasks to team members 
-                    based on workload can be challenging, especially when dealing with multiple projects across 
-                    different architectures. Recently, I developed an automated solution using Smartsheet that 
-                    simplifies the task of assigning team members based on workload across various project stages, 
-                    reducing manual effort and ensuring balanced team distribution.
-                  </p>
-
+                <!-- Project 2 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-200">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Incident Management Tracker</h3>
+                    <p class="text-slate-600 mb-6">Built a Jira-to-Smartsheet automated pipeline using GitHub Actions. Implemented Control Center to maintain uniform governance across all operational sheets.</p>
+                    <p class="text-slate-600 mb-6"><a href="https://datastudio.google.com/reporting/20f85207-7b8f-4c1f-a380-e9433d4bf9bf/page/QJVNF">Dashboard Link</a></p>
+                    <p class="text-slate-600 mb-6"><a href="https://github.com/Thanujak16/Incident-Management-Tracker-jira">Github Link</a></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Jira</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">GitHub Actions</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">DAX</span>
+                    </div>
                 </div>
 
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="https://www.linkedin.com/pulse/project-management-thanuja-k-yerpc/?trackingId=FscMMGV%2FYFgJTYpQh92TOw%3D%3D">
+                <!-- Project 3 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-orange-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-200">
+                        <i class="fas fa-coffee text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Coffee Market Automation</h3>
+                    <p class="text-slate-600 mb-6">Automated end-to-end data collection by scraping coffee market pricing and preferences. Visualized top-selling types and revenue movement via Looker Studio.</p>
+                    <p class="text-slate-600 mb-6"><a href="https://datastudio.google.com/reporting/85fba4aa-b3f6-4b94-8ee1-a3d40523227b/page/X8UcE">Dashboard Link</a></p>
+                    <p class="text-slate-600 mb-6"><a href="https://github.com/Thanujak16/Coffee-Project">Github Link</a></p>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/project management.jfif" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <h3 class="h3 blog-item-title">Project Management</h3>
-
-                  <p class="blog-text">
-                    Project Management through Smartsheet Automation I recently designed a Project Management architecture 
-                    to proactively identify and tackle challenges faced by stakeholders during the Design Phase—from client
-                    escalations to cancellation concerns.
-                    Using Smartsheet, Data Shuttle, and Data Mesh, the system enables:
-                    Early identification of project health issues (Green/Red status tracking)
-                    Automated escalations to Team Leads and Managers
-                    Seamless data sync across Master, Upload, and Backup sheets
-                    Historical data repository for root cause analysis & continuous improvement
-
-                    This architecture not only supports real-time project tracking but also builds a foundation for 
-                    future process excellence by learning from past trends.
-                  </p>
-
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Web Scraping</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Google Sheets</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Looker Studio</span>
+                    </div>
                 </div>
 
-              </a>
-            </li>
+                <!-- Project 4 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-200">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Amazon Sales Dashboard</h3>
+                    <p class="text-slate-600 mb-6">Analyzed $16.33M in sales data, evaluating fulfillment efficiency (Amazon vs Merchants) and optimizing logistics by assessing delivery success rates.</p>
+                    <p class="text-slate-600 mb-6"><a href="https://github.com/Thanujak16/Amazon-Sales-Dashboard">Github Link</a></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">DAX</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Logistics Optimization</span>
+                    </div>
+                </div>
 
-          </ul>
+                <!-- Project 4 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-200">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Airbnb</h3>
+                    <p class="text-slate-600 mb-6"><a href="https://datastudio.google.com/reporting/5d08548c-fe71-4f36-91b7-936d3376b029/page/Q6I3D">Dashboard Link</a></p>
+                    <p class="text-slate-600 mb-6"><a href="https://github.com/Thanujak16/Airbnb">Github Link</a></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Revenue Calculation</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600">Logistics Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- Skills Checklist -->
+    <section id="skills" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <h4 class="text-blue-400 font-bold uppercase text-xs tracking-tighter">Project Control</h4>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Smartsheet Control Center</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Workapps & DataMesh</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Data Shuttle</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-blue-400 font-bold uppercase text-xs tracking-tighter">Data Engineering</h4>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Python (Automation)</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> SQL (MySQL)</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> API Handling</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-blue-400 font-bold uppercase text-xs tracking-tighter">Visualization</h4>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Power BI / DAX</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Tableau</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Looker Studio</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-blue-400 font-bold uppercase text-xs tracking-tighter">Business</h4>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Market Research</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Financial Analytics</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> MBA Strategy</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="achievements">
-
-        <header>
-          <h2 class="h2 article-title">Certifications</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Achievements</h3>
-
-          <ol class="timeline-list">
-            <li class="timeline-item" style="color: bisque;"> Star Performer in JAS2024 Quarter of DesignCafe for creating quality metric sheets and dashboards for stakeholders Voice of customer Architecture.</li>
-            <li class="timeline-item" style="color: bisque;"> Star Performer in JFM2025 Quarter of DesignCafe for creating quality metric sheets and dashboards for stakeholders.,</li>
-            <li class="timeline-item" style="color: bisque;">  I am an Entreprenuer and this is my Entreprenuership for creating quality metric sheets and dashboards for stakeholders</li>
-            <li class="timeline-item" style="color: bisque;">Created seamless architectures for Experience Center Scorecards, which were instrumental in performing audits.</li>
-          </ol>
-
-          <br>
-          
-          <h3 class="h3 form-title">Certification</h3>
-
-          <ol class="timeline-list">
-            <li class="timeline-item" style="color: bisque;"> <a href="https://www.credly.com/badges/d60a11c4-3eb1-4490-adb3-da3297ee0945/public_url" style="color: bisque;">Smartsheet Core Product Certified </a></li>
-            <li class="timeline-item" style="color: bisque;"> <a href="https://drive.google.com/file/d/1r8r47penos7iZcoZhD7JmcVjMp3TXwMp/view?usp=drive_link" style="color: bisque;">Analyzing and Visualizing Data with Microsoft Power BI </a></li>
-            <li class="timeline-item" style="color: bisque;">  <a href="https://www.analystbuilder.com/u/Thanujak99?skill=mysql&r=YCUwMMtVV6v58oQKKk1lrA2zk" style="color: bisque;">SQL Basic to Intermediate (Analyst Builder)</a></li>
-            <li class="timeline-item" style="color: bisque;">  <a href="https://www.hackerrank.com/certificates/c038f1fe92db?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate" style="color: bisque;"> SQL (Basic)  </a></li>
-            <li class="timeline-item" style="color: bisque;">  <a href="https://www.coursera.org/account/accomplishments/verify/7BWAKJ5B56V8?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" style="color: bisque;">Excel Skills for Business Essentials</a></li>
+    <!-- Blogs & Thought Leadership -->
+    <section id="blogs" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4">Blogs & Insights</h2>
+                    <p class="text-slate-500">Sharing my expertise on Smartsheet automation and process optimization.</p>
+                </div>
+                <a href="https://www.linkedin.com/in/thanuja-kedila/recent-activity/articles/" target="_blank" class="text-blue-600 font-bold hover:underline mb-2">View all on LinkedIn →</a>
+            </div>
             
-          </ol>
-        </section>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 blog-card shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-600 mb-4"><i class="fas fa-store text-2xl"></i></div>
+                        <h3 class="text-xl font-bold mb-4 leading-tight">Streamlining Center Store Audit Process</h3>
+                        <p class="text-slate-600 text-sm mb-6">A deep dive into how Smartsheet automation can revolutionize retail audits, ensuring real-time data accuracy and reducing manual reporting overhead.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/pulse/streamlining-center-store-audit-process-smartsheet-automation-k-poazc/" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm">
+                        Read Article <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
 
-      </article>
+                <!-- Blog 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 blog-card shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-emerald-600 mb-4"><i class="fas fa-users-cog text-2xl"></i></div>
+                        <h3 class="text-xl font-bold mb-4 leading-tight">Optimizing Team Assignments & Workload</h3>
+                        <p class="text-slate-600 text-sm mb-6">Exploring intelligent workload management. How to leverage Smartsheet automation to assign tasks based on capacity and project priority.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/pulse/streamlining-team-assignments-smartsheet-automation-workload-k-peafc/" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm">
+                        Read Article <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
 
-    </div>
+                <!-- Blog 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 blog-card shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-orange-600 mb-4"><i class="fas fa-lightbulb text-2xl"></i></div>
+                        <h3 class="text-xl font-bold mb-4 leading-tight">Automation Insights & Project Highlights</h3>
+                        <p class="text-slate-600 text-sm mb-6">A featured LinkedIn update showcasing my recent work in dynamic project tracking and the power of automated Smartsheet architectures.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7259151129790304256/" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm">
+                        View Post <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </main>
+    <!-- LinkedIn Recommendations -->
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <i class="fab fa-linkedin text-4xl text-[#0077b5] mb-4"></i>
+                <h2 class="text-3xl font-bold">LinkedIn Recommendations</h2>
+                <p class="text-slate-500 mt-2">What colleagues and managers say about my work.</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-[40px] italic text-slate-600 relative">
+                <i class="fas fa-quote-left absolute top-8 left-8 text-slate-200 text-6xl"></i>
+                <p class="relative z-10 text-xl leading-relaxed mb-8">
+                    "Thanuja consistently demonstrates strong ownership in her work. She is detail-oriented, committed to delivering quality outcomes, 
+                    and takes responsibility for her tasks with sincerity and focus. Even under pressure, she stays committed and ensures that her responsibilities
+                    are met. Her ability to navigate challenges while maintaining professionalism is commendable. She actively seeks growth and learning opportunities, 
+                    always looking to expand her knowledge beyond immediate responsibilities. Her proactive mindset makes her a valuable contributor to any team. She brings 
+                    positive energy and sincerity into every interaction, making her someone people genuinely enjoy working with."
+                </p>
+                <div class="flex items-center gap-4 not-italic">
+                    <div class="w-12 h-12 bg-slate-300 rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-slate-900 leading-none">Senior Project Manager</p>
+                        <p class="text-sm text-blue-600 mt-1">Colleague at DesignCafe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Footer -->
+    <footer class="py-16 bg-white border-t">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-8 tracking-tighter">THANUJA K.</h2>
+            <div class="flex justify-center space-x-12 mb-10 text-2xl text-slate-400">
+                <a href="https://github.com/Thanujak16" class="hover:text-[#0077b5] transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/thanuja-kedila/" class="hover:text-[#0077b5] transition"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:thanujakedila@gmail.com" class="hover:text-blue-600 transition"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919741366689" class="hover:text-emerald-600 transition"><i class="fas fa-phone"></i></a>
+            </div>
+            <p class="text-slate-400 text-sm">© 2026 Thanuja K. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
